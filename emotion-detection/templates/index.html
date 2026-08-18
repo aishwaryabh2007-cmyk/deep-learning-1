@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Emotion Detection AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>😊 Emotion Detection AI</h1>
+
+    <p class="subtitle">
+        Deep Learning Based Emotion Detector
+    </p>
+
+
+    <textarea
+        id="text"
+        placeholder="Type how you are feeling..."
+    ></textarea>
+
+
+    <button onclick="predictEmotion()">
+        Detect Emotion
+    </button>
+
+
+    <div id="result">
+
+        Your emotion will appear here.
+
+    </div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
